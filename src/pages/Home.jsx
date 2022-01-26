@@ -1,5 +1,9 @@
 import { Link } from "react-router-dom";
 
+import Accordion from "../components/Accordion"
+
+import logo from "../images/logo-transparent.png";
+
 import "./Home.css";
 
 function Home() {
@@ -15,35 +19,11 @@ function Home() {
         sister(5 years old) and two little cousins(4 and 6 years old) that I
         entertain and play with.
       </h4>
-      <ul>
-        Services Offered:
-        <li>
-          playing indoors and in your backyard while you work or take a break
-        </li>
-        <li>making snacks</li>
-        <li>helping kids tidy up play space</li>
-        <li>crafts</li>
-        <li>reading books</li>
-      </ul>
+      <img src={logo} alt="logo" className="logo" />
+
+<Accordion />
+
       I won't let your kids be on devices or screens all day!
-      <ul>
-        Because of my age, I don't:
-        <li>cook with a stove </li>
-        <li>take kids to the park without an adult</li>
-        <li>stay home without an adult </li>
-        <li>give kids baths </li>
-      </ul>
-      <ul>
-        Availability:
-        <li>weekend: Saturday afternoon, Sunday all day </li>
-        <li>weekdays: Monday and Friday after school </li>
-      </ul>
-      <ul>
-        Rates:
-        <li>$5/hour for 1 kid </li>
-        <li>$7/hour for 2 kids </li>
-        <li>$9/hour for 3 kids</li>
-      </ul>
       <p>
         You can contact my mom using <Link to="/contact">this form </Link>to
         book or for more information.

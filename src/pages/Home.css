@@ -1,4 +1,12 @@
 .Home {
-  background-color: teal;
-  color: black;
+  background-color: rgb(150, 209, 209);
+  padding-top: 15vh;
+  color: #737373;
+  font-family: "Varela Round";
 }
+
+.logo {
+  width: 50vh;
+}
+
+

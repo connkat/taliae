@@ -1,3 +1,18 @@
 .Nav {
-    background-color: goldenrod;
+    background-color: #efba2b;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 20vh;
+    padding-right: 20vh;
+}
+
+.title {
+    width: 30vh;
+    padding-top: 2vh;
+}
+
+.contact {
+    width: 20vh;
+    padding-top: 4vh;
 }
