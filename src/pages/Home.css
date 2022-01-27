@@ -1,6 +1,8 @@
 .Home {
   background-color: rgb(150, 209, 209);
-  padding-top: 15vh;
+  padding-top: 20vh;
+  padding-left: 20vh;
+  padding-right: 20vh;
   color: #737373;
   font-family: "Varela Round";
 }
