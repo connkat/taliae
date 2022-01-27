@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
-import Accordion from "../components/Accordion"
+import LeftAccordion from "../components/Accordions/LeftAccordion";
+import RightAccordion from "../components/Accordions/RightAccordion";
 
 import logo from "../images/logo-transparent.png";
 
@@ -18,10 +19,11 @@ function Home() {
         sister(5 years old) and two little cousins(4 and 6 years old) that I
         entertain and play with.
       </h4>
-      <img src={logo} alt="logo" className="logo" />
-
-<Accordion />
-
+      <div className="accordion-sandwich">
+        <LeftAccordion />
+        <img src={logo} alt="logo" className="logo" />
+        <RightAccordion />
+      </div>
       I won't let your kids be on devices or screens all day!
       <p>
         You can contact my mom using <Link to="/contact">this form </Link>to

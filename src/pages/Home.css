@@ -11,4 +11,9 @@
   width: 50vh;
 }
 
+.accordion-sandwich {
+  display: flex;
+  flex-direction: row;
+}
+
 
