@@ -8,7 +8,10 @@
 }
 
 .logo {
-  width: 50vh;
+  padding-bottom: 5vh;
+  align-items: flex-start;
+  display: flex;
+  height: 50vh;
 }
 
 .accordion-sandwich {
@@ -16,4 +19,14 @@
   flex-direction: row;
 }
 
+.center {
+  width: 33%;
+}
 
+.left-side {
+  width: 33%;
+}
+
+.right-side {
+  width: 33%;
+}

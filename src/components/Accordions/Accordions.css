@@ -1,11 +1,25 @@
+.Accordion {
+  width: 50vh;
+  font-family: "Varela Round";
+  color: grey;
+  padding-bottom: 5vh;
+}
+
 #panel1a-header {
   background-color: #efba2b;
   font-family: "Varela Round";
-
 }
 
 #panel2a-header {
   background-color: #efba2b;
-  font-family: "Varela Round";
-
 }
+
+.css-15v22id-MuiAccordionDetails-root {
+  background-color: #efba2b;
+}
+
+.css-ahj2mt-MuiTypography-root {
+  font-family: "Varela Round";
+  color: grey;
+}
+

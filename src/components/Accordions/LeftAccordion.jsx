@@ -1,4 +1,5 @@
 import * as React from "react";
+
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
@@ -9,14 +10,14 @@ import "./Accordions.css";
 
 function LeftAccordion() {
   return (
-    <div>
+    <div className="Accordion">
       <Accordion>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <Typography>Services Offered</Typography>
+          <Typography><b>Services Offered</b></Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
@@ -37,14 +38,13 @@ function LeftAccordion() {
           aria-controls="panel2a-content"
           id="panel2a-header"
         >
-          <Typography>Because of my age, I don't</Typography>
+          <Typography><b>Rates</b></Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            <li>- cook with a stove </li>
-            <li>- take kids to the park without an adult</li>
-            <li>- stay home without an adult </li>
-            <li>- give kids baths </li>
+            <li>$5/hour for 1 kid </li>
+            <li>$7/hour for 2 kids </li>
+            <li>$9/hour for 3 kids</li>
           </Typography>
         </AccordionDetails>
       </Accordion>

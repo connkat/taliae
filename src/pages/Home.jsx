@@ -20,15 +20,21 @@ function Home() {
         entertain and play with.
       </h4>
       <div className="accordion-sandwich">
-        <LeftAccordion />
-        <img src={logo} alt="logo" className="logo" />
-        <RightAccordion />
+        <div className="left-side">
+          <p>I won't let your kids be on devices or screens all day!</p>
+          <LeftAccordion />
+        </div>
+        <div className="center">
+          <img src={logo} alt="logo" className="logo" />
+        </div>
+        <div className="right-side">
+          <p>
+            You can contact my mom using <Link to="/contact">this form </Link>to
+            book or for more information.
+          </p>
+          <RightAccordion />
+        </div>
       </div>
-      I won't let your kids be on devices or screens all day!
-      <p>
-        You can contact my mom using <Link to="/contact">this form </Link>to
-        book or for more information.
-      </p>
     </div>
   );
 }

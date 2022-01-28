@@ -7,19 +7,19 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 function RightAccordion() {
   return (
-    <div>
+    <div className="Accordion">
       <Accordion>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"
           id="panel2a-header"
         >
-          <Typography>Availability</Typography>
+          <Typography><b>Availability</b></Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            <li>weekend: Saturday afternoon, Sunday all day </li>
-            <li>weekdays: Monday and Friday after school </li>
+            <li>- Weekends: Saturday afternoon, Sunday all day </li>
+            <li>- Weekdays: Monday and Friday after school </li>
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -29,13 +29,14 @@ function RightAccordion() {
           aria-controls="panel2a-content"
           id="panel2a-header"
         >
-          <Typography>Rates</Typography>
+          <Typography><b>Because of my age, I don't</b></Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-        <li>$5/hour for 1 kid </li>
-        <li>$7/hour for 2 kids </li>
-        <li>$9/hour for 3 kids</li>
+            <li>- cook with a stove </li>
+            <li>- take kids to the park without an adult</li>
+            <li>- stay home without an adult </li>
+            <li>- give kids baths </li>
           </Typography>
         </AccordionDetails>
       </Accordion>
