@@ -1,5 +1,7 @@
 .Contact{
 margin-top: 15%;
+justify-content: center;
+display: flex;
 }
 
 input {
@@ -18,5 +20,5 @@ div[role="alert"] {
 .message-chars-left {
   width: 600px;
   margin: auto;
-  text-align: left;
+  text-align: right;
 }
