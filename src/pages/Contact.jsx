@@ -2,6 +2,7 @@ import "./Contact.css";
 import { useForm } from "react-hook-form";
 import { useState } from "react";
 
+import ReCAPTCHA from "react-google-recaptcha"
 import { init, sendForm } from "emailjs-com";
 init("user_AmUpjUDLPeSmXgW4Qa9xC");
 
@@ -20,6 +21,11 @@ function Contact() {
     console.log("sent", message);
   };
 
+  function recaptcha (value) {
+    console.log('Captcha value:', value);
+  }
+
+
   const onChange = (e) => {
     const { name, value } = e.target;
     setState((prev) => ({ ...prev, [name]: value }));
@@ -28,7 +34,7 @@ function Contact() {
     e.preventDefault();
     sendForm("default_service", "template_qheiyl2", ".contact-form").then(
       function (response) {
-        clearState()
+        clearState();
         console.log("SUCCESS!", response.status, response.text);
       },
       function (error) {
@@ -74,6 +80,12 @@ function Contact() {
           value={message}
         />
         <p className="message-chars-left">{messageCharsLeft}</p>
+        <br />
+        <ReCAPTCHA
+        sitekey="6LcjFkoeAAAAAF7eyeQL6dHJb1TpH0MXw3gHG1Wq"
+        onChange={recaptcha}
+      />
+
         <br />
         <input type="submit" />
       </form>
