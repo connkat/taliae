@@ -2,7 +2,8 @@ import "./Contact.css";
 import { useForm } from "react-hook-form";
 import { useState } from "react";
 
-import ReCAPTCHA from "react-google-recaptcha"
+import ReCAPTCHA from "react-google-recaptcha";
+import Grecaptcha from "grecaptcha";
 import { init, sendForm } from "emailjs-com";
 init("user_AmUpjUDLPeSmXgW4Qa9xC");
 
@@ -10,6 +11,15 @@ const initialState = {
   user_name: "",
   user_email: "",
   message: "",
+};
+
+const client = new Grecaptcha("secret");
+const checkCaptcha = () => {
+  if (client.verify("token")) {
+    console.log("CAPTCHA ACCEPTED");
+  } else {
+    console.log("CAPTCHA NO DICE BRO");
+  }
 };
 
 function Contact() {
@@ -21,10 +31,9 @@ function Contact() {
     console.log("sent", message);
   };
 
-  function recaptcha (value) {
-    console.log('Captcha value:', value);
+  function recaptcha(value) {
+    console.log("Captcha value:", value);
   }
-
 
   const onChange = (e) => {
     const { name, value } = e.target;
@@ -36,6 +45,7 @@ function Contact() {
       function (response) {
         clearState();
         console.log("SUCCESS!", response.status, response.text);
+        checkCaptcha()
       },
       function (error) {
         console.log("FAILED...", error);
@@ -82,12 +92,12 @@ function Contact() {
         <p className="message-chars-left">{messageCharsLeft}</p>
         <br />
         <ReCAPTCHA
-        sitekey="6LcjFkoeAAAAAF7eyeQL6dHJb1TpH0MXw3gHG1Wq"
-        onChange={recaptcha}
-      />
+          sitekey="6LcjFkoeAAAAAF7eyeQL6dHJb1TpH0MXw3gHG1Wq"
+          onChange={recaptcha}
+        />
 
         <br />
-        <input type="submit" />
+        <input type="submit" disabled={false} />
       </form>
     </div>
   );
