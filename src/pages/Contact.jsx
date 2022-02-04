@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import { useState } from "react";
 
 import ReCAPTCHA from "react-google-recaptcha";
-import Grecaptcha from "grecaptcha";
+// import Grecaptcha from "grecaptcha";
 import { init, sendForm } from "emailjs-com";
 init("user_AmUpjUDLPeSmXgW4Qa9xC");
 
@@ -13,14 +13,14 @@ const initialState = {
   message: "",
 };
 
-const client = new Grecaptcha("secret");
-const checkCaptcha = () => {
-  if (client.verify("token")) {
-    console.log("CAPTCHA ACCEPTED");
-  } else {
-    console.log("CAPTCHA NO DICE BRO");
-  }
-};
+// const client = new Grecaptcha("secret");
+// const checkCaptcha = () => {
+//   if (client.verify("token")) {
+//     console.log("CAPTCHA ACCEPTED");
+//   } else {
+//     console.log("CAPTCHA NO DICE BRO");
+//   }
+// };
 
 function Contact() {
   const { register, formState } = useForm();
@@ -45,7 +45,7 @@ function Contact() {
       function (response) {
         clearState();
         console.log("SUCCESS!", response.status, response.text);
-        checkCaptcha()
+        // checkCaptcha()
       },
       function (error) {
         console.log("FAILED...", error);
@@ -91,10 +91,10 @@ function Contact() {
         />
         <p className="message-chars-left">{messageCharsLeft}</p>
         <br />
-        <ReCAPTCHA
+        {/* <ReCAPTCHA
           sitekey="6LcjFkoeAAAAAF7eyeQL6dHJb1TpH0MXw3gHG1Wq"
           onChange={recaptcha}
-        />
+        /> */}
 
         <br />
         <input type="submit" disabled={false} />
