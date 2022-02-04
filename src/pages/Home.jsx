@@ -19,16 +19,17 @@ function Home() {
         sister(5 years old) and two little cousins(4 and 6 years old) that I
         entertain and play with.
       </h4>
+      <img src={logo} alt="logo-mobile" className="logo-mobile" />
       <div className="accordion-sandwich">
         <div className="left-side">
-          <p>I won't let your kids be on devices or screens all day!</p>
+          <p className="small-text">I won't let your kids be on devices or screens all day!</p>
           <LeftAccordion />
         </div>
         <div className="center">
-          <img src={logo} alt="logo" className="logo" />
+          <img src={logo} alt="logo-desktop" className="logo-desktop" />
         </div>
         <div className="right-side">
-          <p>
+          <p className="small-text">
             You can contact my mom using <Link to="/contact">this form </Link>to
             book or for more information.
           </p>

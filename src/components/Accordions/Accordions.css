@@ -23,3 +23,13 @@
   color: grey;
 }
 
+/* ////   Mobile   //// */
+@media only screen and (max-width: 600px) {
+  .Accordion {
+    width: 32vh;
+    padding-bottom: 2vh;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+  }
+}

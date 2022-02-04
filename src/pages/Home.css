@@ -7,11 +7,20 @@
   font-family: "Varela Round";
 }
 
-.logo {
+.logo-desktop {
   padding-bottom: 5vh;
   align-items: flex-start;
   display: flex;
   height: 50vh;
+  display: visible;
+  position: relative;
+  left: 0em;
+}
+
+.logo-mobile {
+  display: hidden;
+  position: absolute;
+  left: -999em;
 }
 
 .accordion-sandwich {
@@ -29,4 +38,53 @@
 
 .right-side {
   width: 33%;
+}
+
+/* ////   Mobile   //// */
+
+@media only screen and (max-width: 600px) {
+  .Home {
+    padding-top: 7vh;
+    padding-left: 3vh;
+    padding-right: 3vh;
+  }
+  h4 {
+    text-align: center;
+    }
+
+  .logo-desktop {
+    display: hidden;
+    position: absolute;
+    left: -999em;
+  }
+
+  .logo-mobile {
+    margin:auto;
+    display: flex;
+    height: 30vh; 
+    display: visible;
+    position: relative;
+    left: 0em;
+  }
+
+  .accordion-sandwich {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .center {
+    width: 100%;
+  }
+
+  .left-side {
+    width: 100%;
+  }
+
+  .right-side {
+    width: 100%;
+  }
+
+  .small-text {
+    text-align: center;
+  }
 }
