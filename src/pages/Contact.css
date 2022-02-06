@@ -1,15 +1,15 @@
-.Contact{
-margin-top: 15%;
-justify-content: center;
-display: flex;
+.Contact {
+  margin-top: 15%;
+  justify-content: center;
+  display: flex;
 }
 
 input {
-  width: 600px;
+  width: 150vh;
 }
 textarea {
   height: 10em;
-  width: 600px;
+  width: 150vh;
 }
 
 div[role="alert"] {
@@ -18,7 +18,26 @@ div[role="alert"] {
 }
 
 .message-chars-left {
-  width: 600px;
+  width: 150vh;
   margin: auto;
   text-align: right;
+}
+
+/* ////   Mobile   //// */
+
+@media only screen and (max-width: 600px) {
+
+  .Contact {
+    margin-top: 20%;
+  }
+
+  input {
+    width: 50vh;
+  }
+  textarea {
+    width: 50vh;
+  }
+  .message-chars-left {
+    width: 50vh;
+  }
 }
