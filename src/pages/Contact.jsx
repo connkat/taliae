@@ -2,7 +2,7 @@ import "./Contact.css";
 import { useForm } from "react-hook-form";
 import { useState } from "react";
 
-import ReCAPTCHA from "react-google-recaptcha";
+// import ReCAPTCHA from "react-google-recaptcha";
 // import Grecaptcha from "grecaptcha";
 import { init, sendForm } from "emailjs-com";
 init("user_AmUpjUDLPeSmXgW4Qa9xC");
@@ -31,9 +31,9 @@ function Contact() {
     console.log("sent", message);
   };
 
-  function recaptcha(value) {
-    console.log("Captcha value:", value);
-  }
+  // function recaptcha(value) {
+  //   console.log("Captcha value:", value);
+  // }
 
   const onChange = (e) => {
     const { name, value } = e.target;
