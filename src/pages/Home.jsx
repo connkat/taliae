@@ -36,6 +36,9 @@ function Home() {
           <RightAccordion />
         </div>
       </div>
+      <div className="watermark">
+        Website made and maintained by my <a href="http://connkat.com">aunt</a>.
+      </div>
     </div>
   );
 }

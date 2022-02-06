@@ -18,8 +18,8 @@ function RightAccordion() {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            <li>- Weekends: Saturday afternoon, Sunday all day </li>
-            <li>- Weekdays: Monday and Friday after school </li>
+            <li>Weekends: Saturday afternoon, Sunday all day </li>
+            <li>Weekdays: Monday and Friday after school </li>
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -33,10 +33,10 @@ function RightAccordion() {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            <li>- cook with a stove </li>
-            <li>- take kids to the park without an adult</li>
-            <li>- stay home without an adult </li>
-            <li>- give kids baths </li>
+            <li>cook with a stove </li>
+            <li>take kids to the park without an adult</li>
+            <li>stay home without an adult </li>
+            <li>give kids baths </li>
           </Typography>
         </AccordionDetails>
       </Accordion>

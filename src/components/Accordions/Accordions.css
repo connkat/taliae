@@ -16,11 +16,13 @@
 
 .css-15v22id-MuiAccordionDetails-root {
   background-color: #efba2b;
+  font-size: 1vh;
 }
 
 .css-ahj2mt-MuiTypography-root {
   font-family: "Varela Round";
   color: grey;
+  font-size: 1vh;
 }
 
 /* ////   Mobile   //// */

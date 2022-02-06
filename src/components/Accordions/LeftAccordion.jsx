@@ -22,13 +22,13 @@ function LeftAccordion() {
         <AccordionDetails>
           <Typography>
             <li>
-              - playing indoors and in your backyard while you work or take a
+              playing indoors and in your backyard while you work or take a
               break
             </li>
-            <li>- making snacks</li>
-            <li>- helping kids tidy up play space</li>
-            <li>- crafts</li>
-            <li>- reading books</li>
+            <li>making snacks</li>
+            <li>helping kids tidy up play space</li>
+            <li>crafts</li>
+            <li>reading books</li>
           </Typography>
         </AccordionDetails>
       </Accordion>

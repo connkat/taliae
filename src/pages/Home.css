@@ -5,6 +5,7 @@
   padding-right: 20vh;
   color: #737373;
   font-family: "Varela Round";
+  height: 80vh;
 }
 
 .logo-desktop {
@@ -41,6 +42,12 @@
 
 .right-side {
   width: 32%;
+}
+
+.watermark {
+  text-align: right;
+  padding-right: 2vh;
+  font-size: 10px;
 }
 
 /* ////   Mobile   //// */
