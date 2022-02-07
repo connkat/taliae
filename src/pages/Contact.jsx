@@ -57,48 +57,51 @@ function Contact() {
 
   return (
     <div className="Contact">
-      <form className="contact-form" onSubmit={onSubmit}>
-        {formState.isSubmitted && (
-          <div className="success">Form submitted successfully</div>
-        )}
-        <input
-          type="text"
-          name="user_name"
-          {...register("user_name")}
-          placeholder="Name"
-          onChange={onChange}
-          value={user_name}
-        />
+      <div className="contact-body">
+        <p>Use this form to e-mail my mom for more information or to book!</p>
+        <form className="contact-form" onSubmit={onSubmit}>
+          {formState.isSubmitted && (
+            <div className="success">Form submitted successfully</div>
+          )}
+          <input
+            type="text"
+            name="user_name"
+            {...register("user_name")}
+            placeholder="Name"
+            onChange={onChange}
+            value={user_name}
+          />
 
-        <br />
-        <input
-          type="user_email"
-          name="user_email"
-          {...register("user_email", { required: true, maxLength: 100 })}
-          placeholder="Email"
-          onChange={onChange}
-          value={user_email}
-        />
-        <br />
-        <textarea
-          name="message"
-          {...register("message", { required: true, maxLength: 1000 })}
-          placeholder="Message"
-          maxLength="1000"
-          aria-multiline={true}
-          onChange={onChange}
-          value={message}
-        />
-        <p className="message-chars-left">{messageCharsLeft}</p>
-        <br />
-        {/* <ReCAPTCHA
+          <br />
+          <input
+            type="user_email"
+            name="user_email"
+            {...register("user_email", { required: true, maxLength: 100 })}
+            placeholder="Email"
+            onChange={onChange}
+            value={user_email}
+          />
+          <br />
+          <textarea
+            name="message"
+            {...register("message", { required: true, maxLength: 1000 })}
+            placeholder="Message"
+            maxLength="1000"
+            aria-multiline={true}
+            onChange={onChange}
+            value={message}
+          />
+          <p className="message-chars-left">{messageCharsLeft}</p>
+          <br />
+          {/* <ReCAPTCHA
           sitekey="6LcjFkoeAAAAAF7eyeQL6dHJb1TpH0MXw3gHG1Wq"
           onChange={recaptcha}
         /> */}
 
-        <br />
-        <input type="submit" disabled={false} />
-      </form>
+          <br />
+          <input type="submit" disabled={false} />
+        </form>
+      </div>
     </div>
   );
 }
