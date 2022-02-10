@@ -16,3 +16,14 @@
     width: 20vh;
     padding-top: 4vh;
 }
+
+
+/* ////   Tablet   //// */
+
+@media only screen and (min-width: 700px) and (max-width: 1199px) {
+    .Nav {
+    padding-left: 5vh;
+    padding-right: 5vh;
+    }
+
+}

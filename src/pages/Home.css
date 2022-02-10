@@ -5,7 +5,7 @@
   padding-right: 20vh;
   color: #737373;
   font-family: "Varela Round";
-  height: 80vh;
+  background-size: 100%;
 }
 
 .logo-desktop {
@@ -48,6 +48,24 @@
   text-align: right;
   padding-right: 2vh;
   font-size: 10px;
+  padding-bottom: 8vh;
+}
+
+
+/* ////   Tablet   //// */
+
+@media only screen and (min-width: 700px) and (max-width: 1199px) {
+
+  .Home {
+    padding-left: 5vh;
+    padding-right: 5vh;
+  }
+
+  .logo-desktop {
+    height: 15vh;
+
+  }
+
 }
 
 /* ////   Mobile   //// */

@@ -1,57 +1,89 @@
-.Contact {
-  padding-top: 12%;
-  justify-content: center;
-  display: flex;
-  background-color: rgb(150, 209, 209);
-  padding-bottom: 12%;  
-  color: #737373;
-  font-family: "Varela Round";
-}
+@media only screen and (min-width: 1199px) {
+  .Contact {
+    padding-top: 12%;
+    justify-content: center;
+    display: flex;
+    background-color: rgb(150, 209, 209);
+    padding-bottom: 12%;
+    color: #737373;
+    font-family: "Varela Round";
+    background-size: 100%;
+    height: auto;
+  }
 
-.contact-body {
-  display: flex;
-  flex-direction: column;
-}
+  .contact-body {
+    display: flex;
+    flex-direction: column;
+  }
 
-.contact-form{
-  padding-top: 2%;
-}
+  .contact-form {
+    padding-top: 2%;
+  }
 
-input {
-  width: 150vh;
-}
-textarea {
-  height: 10em;
-  width: 150vh;
-}
+  input {
+    width: 150vh;
+  }
+  textarea {
+    height: 10em;
+    width: 150vh;
+  }
 
-div[role="alert"] {
-  color: red;
-  margin-top: 1em;
-}
+  div[role="alert"] {
+    color: red;
+    margin-top: 1em;
+  }
 
-.message-chars-left {
-  width: 150vh;
-  margin: auto;
-  text-align: right;
+  .message-chars-left {
+    width: 150vh;
+    margin: auto;
+    text-align: right;
+  }
 }
 
 /* ////   Mobile   //// */
 
-@media only screen and (max-width: 600px) {
-
+@media only screen and (max-width: 699px) {
   .Contact {
     padding-top: 40%;
     padding-bottom: 20%;
+    margin: auto;
+    align-self: center;
+    padding-left: 10%;
+    background-size: 100%;
   }
 
   input {
-    width: 50vh;
+    width: 80%;
   }
   textarea {
-    width: 50vh;
+    width: 80%;
   }
   .message-chars-left {
-    width: 50vh;
+    width: 80%;
+  }
+}
+
+/* ////   Tablet   //// */
+
+@media only screen and (min-width: 700px) and (max-width: 1199px) {
+  .Contact {
+    padding: 30% 10% 30% 10%;
+    background-color: rgb(150, 209, 209);
+  }
+
+  .contact-body {
+    padding-left: 15%;
+
+  }
+
+  input {
+    width: 80%;
+  }
+  textarea {
+    width: 80%;
+    height: 10vh;
+  }
+  .message-chars-left {
+    width: 80%;
   }
 }
