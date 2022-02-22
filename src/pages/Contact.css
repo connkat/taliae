@@ -50,6 +50,7 @@
     align-self: center;
     padding-left: 10%;
     background-size: 100%;
+    background-color: rgb(150, 209, 209);
   }
 
   input {
