@@ -11,7 +11,7 @@ import "./Home.css";
 function Home() {
   return (
     <div className="Home">
-      <h2> About Me</h2>
+      <h2> About Me:</h2>
       <h4>
         Hi! My name is Talia E! I am 9 years old and live in the Kirkendall
         neighbourhood. I have been described as patient, reliable, kind, fun,
@@ -40,7 +40,7 @@ function Home() {
         </div>
       </div>
       <div>
-        <h2>Happy Customers</h2>
+        <h2>Happy Customers:</h2>
         <Slider />
       </div>
       <div className="watermark">
