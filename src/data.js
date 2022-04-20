@@ -2,11 +2,11 @@ export const accordionOptions = [
   {
     title: "Services Offered",
     points: [
-      "playing indoors and in your backyard while you work or take a break",
-      "making snacks",
-      "helping kids tidy up play space",
-      "crafts",
-      "reading books",
+      "Playing indoors and in your backyard while you work or take a break",
+      "Making snacks",
+      "Helping kids tidy up play space",
+      "Crafts",
+      "Reading books",
     ],
   },
   {
@@ -23,10 +23,10 @@ export const accordionOptions = [
   {
     title: "Because of my age, I don't",
     points: [
-      "cook with a stove",
-      "take kids to the park without an adult",
-      "stay home without an adult",
-      "give kids baths",
+      "Cook with a stove",
+      "Take kids to the park without an adult",
+      "Stay home without an adult",
+      "Give kids baths",
     ],
   },
 ];
