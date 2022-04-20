@@ -8,15 +8,27 @@
   background-size: 100%;
 }
 
+.top-section {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+
+.about-me {
+  width: 60%;
+  padding-left: 10vh;
+  margin: auto;
+}
+
 .logo-desktop {
   padding-bottom: 5vh;
   align-items: flex-start;
   display: flex;
-  height: 40vh;
+  height: 50vh;
   display: visible;
   position: relative;
   left: 0em;
-  margin:0;
+  margin: 0;
 }
 
 .logo-mobile {
@@ -25,38 +37,17 @@
   left: -999em;
 }
 
-.accordion-sandwich {
-  display: flex;
-  flex-direction: row;
-}
-
-.center {
-  width: 33%;
-  display: flex;
-  justify-content: center;
-}
-
-.left-side {
-  width: 32%;
-}
-
-.right-side {
-  width: 32%;
-}
-
 .watermark {
   text-align: right;
   padding-right: 2vh;
   font-size: 10px;
   padding-bottom: 8vh;
-  padding-top: 8vh
+  padding-top: 8vh;
 }
-
 
 /* ////   Tablet   //// */
 
 @media only screen and (min-width: 700px) and (max-width: 1199px) {
-
   .Home {
     padding-left: 5vh;
     padding-right: 5vh;
@@ -65,7 +56,6 @@
   .logo-desktop {
     height: 20vh;
   }
-
 }
 
 /* ////   Mobile   //// */
@@ -77,8 +67,12 @@
     padding-right: 3vh;
   }
   h4 {
-    text-align: center;
-    }
+    text-align: left;
+  }
+
+  .about-me {
+    padding-left: 0;
+  }
 
   .logo-desktop {
     display: hidden;
@@ -87,29 +81,12 @@
   }
 
   .logo-mobile {
-    margin:auto;
+    margin: auto;
     display: flex;
-    height: 30vh; 
+    height: 30vh;
     display: visible;
     position: relative;
     left: 0em;
-  }
-
-  .accordion-sandwich {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .center {
-    width: 100%;
-  }
-
-  .left-side {
-    width: 100%;
-  }
-
-  .right-side {
-    width: 100%;
   }
 
   .small-text {
