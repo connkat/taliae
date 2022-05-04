@@ -7,6 +7,7 @@ export const accordionOptions = [
       "Helping kids tidy up play space",
       "Crafts",
       "Reading books",
+      "Helping run bithday parties for 6 and under"
     ],
   },
   {
