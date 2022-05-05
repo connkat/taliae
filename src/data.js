@@ -15,7 +15,7 @@ export const accordionOptions = [
     points: ["$5/hour for 1 kid", "$7/hour for 2 kids", "$9/hour for 3 kids"],
   },
   {
-    title: "Availability",
+    title: "",
     points: [
       "Weekends: Saturday afternoon, Sunday all day",
       "Weekdays: Monday and Friday after school",
