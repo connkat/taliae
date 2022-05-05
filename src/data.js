@@ -2,12 +2,6 @@ export const accordionOptions = [
   {
     title: "Services Offered:",
     points: [
-      "Playing indoors and in your backyard while you work or take a break",
-      "Making snacks",
-      "Helping kids tidy up play space",
-      "Crafts",
-      "Reading books",
-      "Helping run bithday parties for 6 and under"
     ],
   },
   {
