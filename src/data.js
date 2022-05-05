@@ -1,6 +1,6 @@
 export const accordionOptions = [
   {
-    title: "Services Offered:",
+    title: "Services Offered",
     points: [
       "Playing indoors and in your backyard while you work or take a break",
       "Making snacks",
@@ -11,18 +11,18 @@ export const accordionOptions = [
     ],
   },
   {
-    title: "Rates:",
+    title: "Rates",
     points: ["$5/hour for 1 kid", "$7/hour for 2 kids", "$9/hour for 3 kids"],
   },
   {
-    title: "Availability:",
+    title: "Availability",
     points: [
       "Weekends: Saturday afternoon, Sunday all day",
       "Weekdays: Monday and Friday after school",
     ],
   },
   {
-    title: "Because of my age, I don't:",
+    title: "Because of my age, I don't",
     points: [
       "Cook with a stove",
       "Take kids to the park without an adult",
