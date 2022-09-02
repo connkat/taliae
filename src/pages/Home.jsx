@@ -13,7 +13,7 @@ function Home() {
       <div className="top-section">
         <img src={logo} alt="logo-desktop" className="logo-desktop" />
         <div className="about-me">
-          <h2> About Me:</h2>
+          <h2> MY SITE:</h2>
           <h4>
             Hi! My name is Talia E! I am 9 years old and live in the Kirkendall
             neighbourhood. I have been described as patient, reliable, kind,
