@@ -8,6 +8,3 @@ This Project is built with Create React App and Material UI. I worked through cr
 
 The website it deployed on Netlify, and there are no real bells and whistles here. Just a cute kid looking to market her business on the internet. I purchased this domain for her with the idea that I will pass it off to her when she turns 18 to use as needed as a resume or some weird metaverse reason. 
 
-## State of the Project
-
-Currently it is an MVP because my niece's birthday is coming up imminently, but as I have more time I will be building out best practices and using this as a test site to try other ideas. 
