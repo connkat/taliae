@@ -2,7 +2,7 @@
 
 My 9 (and soon to be 10) year old niece wants to start babysitting, but is still too young to be left alone with younger children. For her birthday this year, she asked me to build her a website to be a `mother's helper`, a name that I very much dislike. I gave her a quick rebrand for the 21st Century and here we are.
 
-## CRA && MUI && Netlify
+## CRA & MUI & Netlify
 
 This Project is built with Create React App and Material UI. I worked through creating an e-mail form using [this tutorial](https://placidowang.medium.com/how-to-add-an-email-form-to-your-react-website-for-free-using-emailjs-and-react-hook-form-7267d6365291).
 
