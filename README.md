@@ -1,6 +1,6 @@
 # Talia & Tots
 
-My 9 10 year old niece wants to start babysitting, but is still too young to be left alone with younger children. For her birthday this year, she asked me to build her a website to be a `mother's helper`, a name that I very much dislike. I gave her a quick rebrand for the 21st Century and here we are.
+My 10 year old niece wants to start babysitting, but is still too young to be left alone with younger children. For her birthday this year, she asked me to build her a website to be a `mother's helper`, a name that I very much dislike. I gave her a quick rebrand for the 21st Century and here we are.
 
 ## CRA & MUI
 
