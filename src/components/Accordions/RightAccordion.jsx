@@ -6,42 +6,63 @@ import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 function RightAccordion() {
-  return (
-    <div className="Accordion">
-      <Accordion>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel2a-content"
-          id="panel2a-header"
-        >
-          <Typography><b>Availability</b></Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>
-            <li>Weekends: Saturday afternoon, Sunday all day </li>
-            <li>Weekdays: Monday and Friday after school </li>
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
-      <Accordion>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel2a-content"
-          id="panel2a-header"
-        >
-          <Typography><b>Because of my age, I don't</b></Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>
-            <li>cook with a stove </li>
-            <li>take kids to the park without an adult</li>
-            <li>stay home without an adult </li>
-            <li>give kids baths </li>
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
-    </div>
-  );
+	return (
+		<div className="Accordion">
+			<Accordion>
+				<AccordionSummary
+					expandIcon={<ExpandMoreIcon />}
+					aria-controls="panel2a-content"
+					id="panel2a-header"
+				>
+					<Typography>
+						<b>Availability</b>
+					</Typography>
+				</AccordionSummary>
+				<AccordionDetails>
+					<Typography>
+						<li>Weekends: Saturday afternoon, Sunday all day </li>
+						<li>Weekdays: Monday, Tuesday, and Thursday after school </li>
+					</Typography>
+				</AccordionDetails>
+			</Accordion>
+			<Accordion>
+				<AccordionSummary
+					expandIcon={<ExpandMoreIcon />}
+					aria-controls="panel2a-content"
+					id="panel2a-header"
+				>
+					<Typography>
+						<b>Because of my age, I don't</b>
+					</Typography>
+				</AccordionSummary>
+				<AccordionDetails>
+					<Typography>
+						<li>cook with a stove </li>
+						<li>take kids to the park without an adult</li>
+						<li>stay home without an adult </li>
+						<li>give kids baths </li>
+					</Typography>
+				</AccordionDetails>
+			</Accordion>
+			<Accordion>
+				<AccordionSummary
+					expandIcon={<ExpandMoreIcon />}
+					aria-controls="panel2a-content"
+					id="panel2a-header"
+				>
+					<Typography>
+						<b>Certifications</b>
+					</Typography>
+				</AccordionSummary>
+				<AccordionDetails>
+					<Typography>
+						<li>Home Alone Course (July 2023) </li>
+						<li>Soon: Babysitting Course (Summer 2024)</li>
+					</Typography>
+				</AccordionDetails>
+			</Accordion>
+		</div>
+	);
 }
 
 export default RightAccordion;
