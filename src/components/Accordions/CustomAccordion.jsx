@@ -15,25 +15,25 @@ function CustomAccordion(obj) {
     <div className="Accordion">
       {accordionOptions.map((data, key) => {
         return (
-          <Accordion>
-            <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
-              aria-controls="panel1a-content"
-              id="panel1a-header"
-            >
-              <Typography>
-                <b>{data.title}</b>
-              </Typography>
-            </AccordionSummary>
-            <AccordionDetails>
-              <Typography>
-                {data.points.map((item) => {
-                  return <li>{item}</li>;
-                })}
-              </Typography>
-            </AccordionDetails>
-          </Accordion>
-        );
+					<Accordion>
+						<AccordionSummary
+							expandIcon={<ExpandMoreIcon />}
+							aria-controls="panel1a-content"
+							id="panel1a-header"
+						>
+							<Typography>
+								<b>{data.title}</b>
+							</Typography>
+						</AccordionSummary>
+						<AccordionDetails>
+							<Typography>
+								{data.points.map((item, key) => {
+									return <li key={key}>{item}</li>;
+								})}
+							</Typography>
+						</AccordionDetails>
+					</Accordion>
+				);
       })}
     </div>
   );
