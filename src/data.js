@@ -7,18 +7,18 @@ export const accordionOptions = [
 			"Helping kids tidy up play space",
 			"Crafts",
 			"Reading books",
-			"Helping run bithday parties for 6 and under",
+			"Helping run birthday parties for 6 and under",
 		],
 	},
 	{
 		title: "Rates",
-		points: ["$5/hour for 1 kid", "$7/hour for 2 kids", "$9/hour for 3 kids"],
+		points: ["$7/hour for 1 kid", "$9/hour for 2 kids", "$11/hour for 3 kids"],
 	},
 	{
 		title: "Availability",
 		points: [
 			"Weekends: Saturday afternoon, Sunday all day",
-			"Weekdays: Monday and Friday after school",
+			"Weekdays: Monday, Tuesday, and Thursday after school",
 		],
 	},
 	{
