@@ -10,12 +10,12 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 import "./CustomAccordions.css";
 
-function CustomAccordion(obj) {
-  return (
-    <div className="Accordion">
-      {accordionOptions.map((data, key) => {
-        return (
-					<Accordion>
+function CustomAccordion() {
+	return (
+		<div className="Accordion">
+			{accordionOptions.map((data, key) => {
+				return (
+					<Accordion key={key}>
 						<AccordionSummary
 							expandIcon={<ExpandMoreIcon />}
 							aria-controls="panel1a-content"
@@ -28,15 +28,15 @@ function CustomAccordion(obj) {
 						<AccordionDetails>
 							<Typography>
 								{data.points.map((item, key) => {
-									return <li key={key}>{item}</li>;
+									return <li key={item}>{item}</li>;
 								})}
 							</Typography>
 						</AccordionDetails>
 					</Accordion>
 				);
-      })}
-    </div>
-  );
+			})}
+		</div>
+	);
 }
 
 export default CustomAccordion;

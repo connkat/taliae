@@ -15,8 +15,8 @@ export default function SimpleSlider() {
 	};
 	return (
 		<Slider {...settings}>
-			{testimonials.map((testimonial) => {
-				return <p key={testimonials[testimonial]}>{testimonial}</p>;
+			{testimonials.map((testimonial, key) => {
+				return <p key={key}>{testimonial}</p>;
 			})}
 		</Slider>
 	);

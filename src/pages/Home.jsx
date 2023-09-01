@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom";
 
 import CustomAccordion from "../components/Accordions/CustomAccordion";
-import Slider from "../components/Slider";
+import SimpleSlider from "../components/SimpleSlider";
 
 import logo from "../images/logo-transparent.png";
 
 import "./Home.css";
 
 function Home() {
-  return (
+	return (
 		<div className="Home">
 			<div className="top-section">
 				<img src={logo} alt="logo-desktop" className="logo-desktop" />
@@ -35,7 +35,7 @@ function Home() {
 			<CustomAccordion />
 			<div>
 				<h2>Happy Customers:</h2>
-				<Slider />
+				<SimpleSlider />
 			</div>
 			<div className="watermark">
 				Website made and maintained by my <a href="http://connkat.com">aunt</a>.
